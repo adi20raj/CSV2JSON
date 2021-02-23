@@ -19,8 +19,8 @@ The Reason for this tool is I looked for golang examples but found most of it us
 
 ## How to use this tool:
 * After Downloading the go file you can run
-`go run main.go -path={path to csv file} > {path to output json file}` example `go run main.go -path=/tmp/data.csv > /tmp/output.json`
-* you will have a new file in the output location as the csv one but with JSON extension.
+`go run main.go -path={path to csv file} > {path to output json file}` <br/> Example `go run main.go -path=/tmp/data.csv > /tmp/output.json`
+* you will have a new file in the output location with JSON extension.
 
 ## Example:
 
