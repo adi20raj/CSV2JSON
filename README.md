@@ -1,14 +1,26 @@
 # CSV2JSON
 Convert CSV to automatically nested JSON in Golang.
 
-This project transforms CSV to JSON without struct and allows recreating nested object using delimiters.
-The Reason for this tool is I looked for golang examples but I found most of it using struct, so I built this to be flexible enough for any file.
+This project transforms CSV to JSON without struct and allows recreating nested object using delimiters. <br/>
+The Reason for this tool is I looked for golang examples but found most of it using struct, so I built this to be flexible enough for any file.
+
+## Table of Contents
+<!--ts-->
+   + [Usage](#how-to-use-this-tool)
+   + [Examples](#example)
+      + [Basic](#basic-transformation)
+      + [Nested](#nested-transformation)
+        + [Object](#object)
+        + [Array Object](#array-object)
+        + [Multi-Level Object](#multi-level-object)
+        + [Multi-level Array with Internal Object](#multi-level-array-with-internal-objects)
+   + [License](#license)
+<!--te-->
 
 ## How to use this tool:
 * After Downloading the go file you can run
 `go run main.go -path={path to csv file} > {path to output json file}` example `go run main.go -path=/tmp/data.csv > /tmp/output.json`
-* you will have a new file in the same root as the csv one but with JSON extension.
-
+* you will have a new file in the output location as the csv one but with JSON extension.
 
 ## Example:
 
