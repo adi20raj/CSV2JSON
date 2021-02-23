@@ -75,11 +75,11 @@ func csvToJson(rows [][]string) (string, error) {
 						internal[key] = internalArray
 						break
 					}
-					if arrayIndex > len(internalArray) {
+					if arrayIndex >= len(internalArray) {
 						internalArray = append(internalArray, map[string]interface{}{})
 					}
 					internal[key] = internalArray
-					internal = internalArray[arrayIndex-1].(map[string]interface{})
+					internal = internalArray[arrayIndex].(map[string]interface{})
 				} else {
 					if index == len(objectSlice)-1 {
 						internal[key] = value
