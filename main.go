@@ -95,7 +95,7 @@ func csvToJson(rows [][]string) (string, error) {
 		entries = append(entries, entry)
 	}
 
-	bytes, err := json.Marshal(entries)
+	bytes, err := json.MarshalIndent(entries, "", "	")
 	if err != nil {
 		return "", fmt.Errorf("Marshal error %s\n", err)
 	}
